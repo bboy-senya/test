@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Функция __autoload для автоматического подключения классов
+ * Функция my_autoload для автоматического подключения классов
  */
-function __autoload($class_name)
+function my_autoload($class_name)
 {
     // Массив папок, в которых могут находиться необходимые классы
     $array_paths = array(
@@ -24,3 +24,5 @@ function __autoload($class_name)
         }
     }
 }
+
+spl_autoload_register('my_autoload');
