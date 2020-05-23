@@ -23,7 +23,7 @@ class Tasks {
 		$db = Db::getConnection();
         
         $sql = "SELECT tasks.text, tasks.id_user, tasks.id, tasks.status, users.name as users_name, users.email as users_email FROM tasks 
-                INNER JOIN users ON tasks.id_user = users.id LIMIT :limit OFFSET :offset";
+                INNER JOIN users ON tasks.id_user = users.id ORDER BY tasks.id DESC LIMIT :limit OFFSET :offset";
 
         $result = $db->prepare($sql);
         $result->bindParam(':limit', $limit, PDO::PARAM_INT);
