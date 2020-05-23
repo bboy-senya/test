@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<base href="https://test.myoptcenter.ru/">
 	<link rel="stylesheet" type="text/css" href="/template/css/bootstrap.min.css" >
 	<title>TestTask</title>
 </head>
